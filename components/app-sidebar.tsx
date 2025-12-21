@@ -33,7 +33,7 @@ import {
   AlertDialogTitle,
 } from "./ui/alert-dialog";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
-
+import { BankDrawer } from "./bank-drawer";
 export function AppSidebar() {
   const router = useRouter();
   const { setOpenMobile } = useSidebar();
@@ -121,6 +121,9 @@ export function AppSidebar() {
           </SidebarMenu>
         </SidebarHeader>
         <SidebarContent>
+          <div className="px-2 py-2 border-b border-sidebar-border/50">
+    <BankDrawer />
+  </div>
           {/* 3. Passing user to SidebarHistory (ensure SidebarHistory is also updated to accept Clerk's user type) */}
           <SidebarHistory />
         </SidebarContent>
