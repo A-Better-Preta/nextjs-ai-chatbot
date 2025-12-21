@@ -6,6 +6,7 @@ import {
   smoothStream,
   stepCountIs,
   streamText,
+  tool,
 } from "ai";
 import { after } from "next/server";
 import {
@@ -39,6 +40,22 @@ import { convertToUIMessages, generateUUID } from "@/lib/utils";
 import { generateTitleFromUserMessage } from "../../actions";
 import { type PostRequestBody, postRequestBodySchema } from "./schema";
 
+import { z } from "zod"; // Add this for tool parameter validation
+import { localDb } from "@/lib/db/local-db"; // Import your new DB connection
+import Database from 'better-sqlite3';
+import path from 'path';
+
+// 1. Define the path once
+const dbPath = path.join(process.cwd(), 'user_data.db');
+
+// 2. Initialize the connection once
+const db = new Database(dbPath, { 
+  readonly: true,
+  fileMustExist: true 
+});
+// (Optional) Optimize for performance
+db.pragma('journal_mode = DELETE');
+db.pragma('synchronous = OFF');
 export const maxDuration = 60;
 
 let globalStreamContext: ResumableStreamContext | null = null;
@@ -172,8 +189,9 @@ export async function POST(request: Request) {
           selectedChatModel.includes("thinking");
 
         const result = streamText({
-          model: getLanguageModel(selectedChatModel),
-          system: systemPrompt({ selectedChatModel, requestHints }),
+          model: 'google/gemini-3-flash',
+          //model: getLanguageModel(selectedChatModel),
+          system: systemPrompt({ selectedChatModel: 'google/gemini-3-flash', requestHints }),
           messages: await convertToModelMessages(uiMessages),
           stopWhen: stepCountIs(5),
           experimental_activeTools: isReasoningModel
@@ -183,6 +201,8 @@ export async function POST(request: Request) {
                 "createDocument",
                 "updateDocument",
                 "requestSuggestions",
+                "getBalances",     // <--- ADD THIS
+                "getTransactions", // <--- ADD THIS
               ],
           experimental_transform: isReasoningModel
             ? undefined
@@ -202,6 +222,39 @@ export async function POST(request: Request) {
               session,
               dataStream,
             }),
+              // --- ADD YOUR NEW SQL TOOLS HERE ---
+           getBalances: tool({
+              description: 'Get current balances for all accounts',
+              inputSchema: z.object({}), // This line will no longer error
+        execute: async () => {
+  // Use * to ensure iban and account_number are included
+  return db.prepare('SELECT * FROM accounts').all();
+},
+            }),
+          getTransactions: tool({
+              description: 'Search bank transactions by description',
+              inputSchema: z.object({
+                description: z.string().optional().describe('Search term for merchant names'),
+                limit: z.number().default(10)
+              }),
+              execute: async ({ description, limit }) => {
+    try {
+      const query = description 
+        ? `SELECT * FROM transactions WHERE description LIKE ? ORDER BY date DESC LIMIT ?`
+        : `SELECT * FROM transactions ORDER BY date DESC LIMIT ?`;
+      
+      const params = description ? [`%${description}%`, limit] : [limit];
+      
+      // Use .all() and ensure it returns an array
+      const results = db.prepare(query).all(...params);
+      
+      return results ?? []; // Always return at least an empty array
+    } catch (error) {
+      console.error("Database error in getTransactions:", error);
+      throw error;
+    }
+  },
+})
           },
           experimental_telemetry: {
             isEnabled: isProductionEnvironment,

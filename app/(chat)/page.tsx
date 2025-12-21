@@ -19,21 +19,21 @@ async function NewChatPage() {
   const id = generateUUID();
 
   if (!modelIdFromCookie) {
-    return (
-      <>
-        <Chat
-          autoResume={false}
-          id={id}
-          initialChatModel={DEFAULT_CHAT_MODEL}
-          initialMessages={[]}
-          initialVisibilityType="private"
-          isReadonly={false}
-          key={id}
-        />
-        <DataStreamHandler />
-      </>
-    );
-  }
+return (
+    <>
+      <Chat
+        autoResume={false}
+        id={id}
+        initialChatModel="google/gemini-3-flash" // Force your model here
+        initialMessages={[]}
+        initialVisibilityType="private"
+        isReadonly={false}
+        key={id}
+      />
+      <DataStreamHandler />
+    </>
+  );
+}
 
   return (
     <>

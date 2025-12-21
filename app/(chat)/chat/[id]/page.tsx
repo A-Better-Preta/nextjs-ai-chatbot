@@ -8,7 +8,6 @@ import { DataStreamHandler } from "@/components/data-stream-handler";
 import { DEFAULT_CHAT_MODEL } from "@/lib/ai/models";
 import { getChatById, getMessagesByChatId } from "@/lib/db/queries";
 import { convertToUIMessages } from "@/lib/utils";
-
 export default function Page(props: { params: Promise<{ id: string }> }) {
   return (
     <Suspense fallback={<div className="flex h-dvh" />}>
@@ -47,6 +46,7 @@ async function ChatPage({ params }: { params: Promise<{ id: string }> }) {
 
   const uiMessages = convertToUIMessages(messagesFromDb);
 
+  /*
   const cookieStore = await cookies();
   const chatModelFromCookie = cookieStore.get("chat-model");
 
@@ -79,4 +79,19 @@ async function ChatPage({ params }: { params: Promise<{ id: string }> }) {
       <DataStreamHandler />
     </>
   );
+}
+*/
+return (
+  <>
+    <Chat
+      autoResume={true}
+      id={chat.id}
+      initialChatModel="google/gemini-3-flash" // Hardcoded here
+      initialMessages={uiMessages}
+      initialVisibilityType={chat.visibility}
+      isReadonly={session?.user?.id !== chat.userId}
+    />
+    <DataStreamHandler />
+  </>
+);
 }

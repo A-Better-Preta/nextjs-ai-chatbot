@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import type { User } from "next-auth";
+import { useUser } from "@clerk/nextjs"; // Using Clerk instead of NextAuth
 import { useState } from "react";
 import { toast } from "sonner";
 import { useSWRConfig } from "swr";
@@ -34,11 +34,14 @@ import {
 } from "./ui/alert-dialog";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 
-export function AppSidebar({ user }: { user: User | undefined }) {
+export function AppSidebar() {
   const router = useRouter();
   const { setOpenMobile } = useSidebar();
   const { mutate } = useSWRConfig();
   const [showDeleteAllDialog, setShowDeleteAllDialog] = useState(false);
+
+  // 1. Call the hook inside the component body
+  const { user } = useUser();
 
   const handleDeleteAll = () => {
     const deletePromise = fetch("/api/history", {
@@ -76,6 +79,7 @@ export function AppSidebar({ user }: { user: User | undefined }) {
                 </span>
               </Link>
               <div className="flex flex-row gap-1">
+                {/* 2. Logic check using the clerk user object */}
                 {user && (
                   <Tooltip>
                     <TooltipTrigger asChild>
@@ -117,9 +121,13 @@ export function AppSidebar({ user }: { user: User | undefined }) {
           </SidebarMenu>
         </SidebarHeader>
         <SidebarContent>
-          <SidebarHistory user={user} />
+          {/* 3. Passing user to SidebarHistory (ensure SidebarHistory is also updated to accept Clerk's user type) */}
+          <SidebarHistory />
         </SidebarContent>
-        <SidebarFooter>{user && <SidebarUserNav user={user} />}</SidebarFooter>
+        <SidebarFooter>
+          {/* 4. SidebarUserNav now handles its own internal state */}
+          {user && <SidebarUserNav />}
+        </SidebarFooter>
       </Sidebar>
 
       <AlertDialog

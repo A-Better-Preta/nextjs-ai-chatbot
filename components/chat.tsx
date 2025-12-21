@@ -70,8 +70,10 @@ export function Chat({
 
   const [input, setInput] = useState<string>("");
   const [showCreditCardAlert, setShowCreditCardAlert] = useState(false);
-  const [currentModelId, setCurrentModelId] = useState(initialChatModel);
-  const currentModelIdRef = useRef(currentModelId);
+const [currentModelId, setCurrentModelId] = useState("google/gemini-3-flash");
+const currentModelIdRef = useRef(currentModelId);
+  //const [currentModelId, setCurrentModelId] = useState(initialChatModel);
+  //const currentModelIdRef = useRef(currentModelId);
 
   useEffect(() => {
     currentModelIdRef.current = currentModelId;

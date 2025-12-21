@@ -1,0 +1,2602 @@
+[
+  {
+    "id": "4810825a6369437088f8dc654b200f03",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-12999",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Clas Ohlson",
+      "display": "Clas Ohlson"
+    },
+    "dates": {
+      "booked": "2025-12-16"
+    },
+    "identifiers": {
+      "providerTransactionId": "1001"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "PENDING",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "a6fe313f1de749ec970bb314d91bd879",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2999",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "ICA",
+      "display": "Ica"
+    },
+    "dates": {
+      "booked": "2025-12-15"
+    },
+    "identifiers": {
+      "providerTransactionId": "1002"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "PENDING",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "d80d5340355c4e0588139b2aaaf432a6",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2790",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Storstockholms Lokaltrafik",
+      "display": "Storstockholms Lokaltrafik"
+    },
+    "dates": {
+      "booked": "2025-12-15"
+    },
+    "identifiers": {
+      "providerTransactionId": "1003"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "PENDING",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "e819010a03f8489490ee96a0bc74b0c3",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-1733",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Hemköp",
+      "display": "Hemköp"
+    },
+    "dates": {
+      "booked": "2025-12-15"
+    },
+    "identifiers": {
+      "providerTransactionId": "1004"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "PENDING",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "2a2f9af1bce24a0589f2eebe6a45c513",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2299",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Telia",
+      "display": "Telia"
+    },
+    "dates": {
+      "booked": "2025-12-12"
+    },
+    "identifiers": {
+      "providerTransactionId": "1005"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "a0f348a13a824489a283a6dc2638ae36",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-1599",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Spotify",
+      "display": "Spotify"
+    },
+    "dates": {
+      "booked": "2025-12-12"
+    },
+    "identifiers": {
+      "providerTransactionId": "1007"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "d5a25a0f65504354ad146faa3ad0a9a0",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2000",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Uttag",
+      "display": "Uttag"
+    },
+    "dates": {
+      "booked": "2025-12-12"
+    },
+    "identifiers": {
+      "providerTransactionId": "1006"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "ae0665c9e0c1458ba5a66309e57ebbf6",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-249",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Wayne's coffee",
+      "display": "Wayne's Coffee"
+    },
+    "dates": {
+      "booked": "2025-12-11"
+    },
+    "identifiers": {
+      "providerTransactionId": "1009"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "d04cc780d86541699966593e299bf38f",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-868",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "The Bishops Arms",
+      "display": "The Bishops Arms"
+    },
+    "dates": {
+      "booked": "2025-12-11"
+    },
+    "identifiers": {
+      "providerTransactionId": "1008"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "6ecee1c8c2754551b30441d1bc290904",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-20000",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Överföring",
+      "display": "Överföring"
+    },
+    "dates": {
+      "booked": "2025-12-10"
+    },
+    "identifiers": {
+      "providerTransactionId": "1010"
+    },
+    "types": {
+      "type": "TRANSFER"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "e89b1afb029144fa9244137bdcb8ef68",
+    "accountId": "fd12d2fcb8ed4c77a3051e81c4f84d38",
+    "amount": {
+      "value": {
+        "unscaledValue": "20000",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Överföring",
+      "display": "Överföring"
+    },
+    "dates": {
+      "booked": "2025-12-10"
+    },
+    "identifiers": {
+      "providerTransactionId": "1001"
+    },
+    "types": {
+      "type": "TRANSFER"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "90e57a1e758e485081c5c31966540045",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-5698",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Zalando",
+      "display": "Zalando"
+    },
+    "dates": {
+      "booked": "2025-12-09"
+    },
+    "identifiers": {
+      "providerTransactionId": "1011"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "2119143e63714e8385206bc514d79901",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2790",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Storstockholms Lokaltrafik",
+      "display": "Storstockholms Lokaltrafik"
+    },
+    "dates": {
+      "booked": "2025-12-08"
+    },
+    "identifiers": {
+      "providerTransactionId": "1014"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "5af7816d9a874283aa2c57b47193f211",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2999",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "ICA",
+      "display": "Ica"
+    },
+    "dates": {
+      "booked": "2025-12-08"
+    },
+    "identifiers": {
+      "providerTransactionId": "1013"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "f38d96c618b34d72bab8f05a511c94fc",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-4000",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Shell",
+      "display": "Shell"
+    },
+    "dates": {
+      "booked": "2025-12-08"
+    },
+    "identifiers": {
+      "providerTransactionId": "1012"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "3c7ecbbdd4cc4fa0915307f2ddcd5d58",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-379",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Starbucks",
+      "display": "Starbucks"
+    },
+    "dates": {
+      "booked": "2025-12-05"
+    },
+    "identifiers": {
+      "providerTransactionId": "1016"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "5eac30d0b2174fad9e2deb2f7b42383c",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-3485",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Trygg-Hansa",
+      "display": "Trygg-Hansa"
+    },
+    "dates": {
+      "booked": "2025-12-05"
+    },
+    "identifiers": {
+      "providerTransactionId": "1015"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "1adf95aa9b8f46e8b9fd33621c2daee2",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-249",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Wayne's coffee",
+      "display": "Wayne's Coffee"
+    },
+    "dates": {
+      "booked": "2025-12-04"
+    },
+    "identifiers": {
+      "providerTransactionId": "1017"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "3b973e17963f48fc9f3f50b0cce1325d",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2766",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Coop",
+      "display": "Coop"
+    },
+    "dates": {
+      "booked": "2025-12-03"
+    },
+    "identifiers": {
+      "providerTransactionId": "1019"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "9dd50256438f40d3af8ddd5babf71c40",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-65000",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Hyra",
+      "display": "Hyra"
+    },
+    "dates": {
+      "booked": "2025-12-03"
+    },
+    "identifiers": {
+      "providerTransactionId": "1018"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "e0fba17f2cf047659df7bb3837530aac",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2999",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Specsavers",
+      "display": "Specsavers"
+    },
+    "dates": {
+      "booked": "2025-12-02"
+    },
+    "identifiers": {
+      "providerTransactionId": "1020"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "e487d31c168146ccb3095d40e8c510be",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "188703",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Lön",
+      "display": "Lön"
+    },
+    "dates": {
+      "booked": "2025-12-02"
+    },
+    "identifiers": {
+      "providerTransactionId": "1021"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "10633b1fed5646798d380683bdb3fe2a",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-372",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Ränta",
+      "display": "Ränta"
+    },
+    "dates": {
+      "booked": "2025-12-01"
+    },
+    "identifiers": {
+      "providerTransactionId": "1025"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "4bc827d9c10249d0a3c16d086d3fc9bc",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2790",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Storstockholms Lokaltrafik",
+      "display": "Storstockholms Lokaltrafik"
+    },
+    "dates": {
+      "booked": "2025-12-01"
+    },
+    "identifiers": {
+      "providerTransactionId": "1023"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "6c46ecba10ab4d92b48d67bdf51a4f6d",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2999",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "ICA",
+      "display": "Ica"
+    },
+    "dates": {
+      "booked": "2025-12-01"
+    },
+    "identifiers": {
+      "providerTransactionId": "1022"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "db66b8f0c0d5400486983d65b4e64492",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-1799",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Vapiano",
+      "display": "Vapiano"
+    },
+    "dates": {
+      "booked": "2025-12-01"
+    },
+    "identifiers": {
+      "providerTransactionId": "1024"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "cfcf089e141e4d9cbe75e38999a53c05",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-569",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "McDonalds",
+      "display": "Mcdonalds"
+    },
+    "dates": {
+      "booked": "2025-11-28"
+    },
+    "identifiers": {
+      "providerTransactionId": "1027"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "df32ae974e5942aaadbd1f08c56c1189",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2399",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Bredbandsbolaget",
+      "display": "Bredbandsbolaget"
+    },
+    "dates": {
+      "booked": "2025-11-28"
+    },
+    "identifiers": {
+      "providerTransactionId": "1026"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "9a9ad539bca84368b05f3adfa9d84188",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-249",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Wayne's coffee",
+      "display": "Wayne's Coffee"
+    },
+    "dates": {
+      "booked": "2025-11-27"
+    },
+    "identifiers": {
+      "providerTransactionId": "1029"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "a82c55068a0c4794bf24646908f757ef",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-868",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "The Bishops Arms",
+      "display": "The Bishops Arms"
+    },
+    "dates": {
+      "booked": "2025-11-27"
+    },
+    "identifiers": {
+      "providerTransactionId": "1028"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "07d4c3cc6013458f844ed41a70cd86a0",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-9771",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Stadium",
+      "display": "Stadium"
+    },
+    "dates": {
+      "booked": "2025-11-26"
+    },
+    "identifiers": {
+      "providerTransactionId": "1030"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "34df4fd247be4b4f9a54d2bd2c480669",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-3400",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Fortum",
+      "display": "Fortum"
+    },
+    "dates": {
+      "booked": "2025-11-26"
+    },
+    "identifiers": {
+      "providerTransactionId": "1031"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "e104bcf2dbbd429b9af168c4878b6bfd",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-979",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Zara",
+      "display": "Zara"
+    },
+    "dates": {
+      "booked": "2025-11-25"
+    },
+    "identifiers": {
+      "providerTransactionId": "1032"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "0e089af88b7646f28cfd9c6cba65be5a",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2790",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Storstockholms Lokaltrafik",
+      "display": "Storstockholms Lokaltrafik"
+    },
+    "dates": {
+      "booked": "2025-11-24"
+    },
+    "identifiers": {
+      "providerTransactionId": "1035"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "958a658212504cd48fb7a7ee9b315243",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2999",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "ICA",
+      "display": "Ica"
+    },
+    "dates": {
+      "booked": "2025-11-24"
+    },
+    "identifiers": {
+      "providerTransactionId": "1034"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "ac47f820bb27454c9f9bfc30bf5c34f3",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-4000",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Shell",
+      "display": "Shell"
+    },
+    "dates": {
+      "booked": "2025-11-24"
+    },
+    "identifiers": {
+      "providerTransactionId": "1033"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "018612fe2b2b42bb90d8f1881bac8648",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2399",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "H&M",
+      "display": "H&M"
+    },
+    "dates": {
+      "booked": "2025-11-23"
+    },
+    "identifiers": {
+      "providerTransactionId": "1036"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "49c442546c444cd09515ca42db86e55c",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-5366",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Hemköp",
+      "display": "Hemköp"
+    },
+    "dates": {
+      "booked": "2025-11-22"
+    },
+    "identifiers": {
+      "providerTransactionId": "1037"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "15984e3a586f44679921a08e0c08fece",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-379",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Starbucks",
+      "display": "Starbucks"
+    },
+    "dates": {
+      "booked": "2025-11-21"
+    },
+    "identifiers": {
+      "providerTransactionId": "1038"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "0a72516ee1dd4a21a03e25077be95b57",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-249",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Wayne's coffee",
+      "display": "Wayne's Coffee"
+    },
+    "dates": {
+      "booked": "2025-11-20"
+    },
+    "identifiers": {
+      "providerTransactionId": "1041"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "5387b5316b264b51a8e17abe7fd17424",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-1967",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Lidl",
+      "display": "Lidl"
+    },
+    "dates": {
+      "booked": "2025-11-20"
+    },
+    "identifiers": {
+      "providerTransactionId": "1039"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "59d80b318cfe46729134db689f63de7e",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-1290",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Arlanda Express",
+      "display": "Arlanda Express"
+    },
+    "dates": {
+      "booked": "2025-11-20"
+    },
+    "identifiers": {
+      "providerTransactionId": "1040"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "358d49e364c846d08a0878216085c6aa",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2496",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Hirschenkeller",
+      "display": "Hirschenkeller"
+    },
+    "dates": {
+      "booked": "2025-11-19"
+    },
+    "identifiers": {
+      "providerTransactionId": "1042"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "821614584b424ec985c9a3bea50b8638",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-379",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Apoteket Hjärtat",
+      "display": "Apoteket Hjärtat"
+    },
+    "dates": {
+      "booked": "2025-11-17"
+    },
+    "identifiers": {
+      "providerTransactionId": "1046"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "909b69ca16054f23822a48c3e7b32396",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2999",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "ICA",
+      "display": "Ica"
+    },
+    "dates": {
+      "booked": "2025-11-17"
+    },
+    "identifiers": {
+      "providerTransactionId": "1043"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "b24f030b33f749d99f5357ba62e73210",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2790",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Storstockholms Lokaltrafik",
+      "display": "Storstockholms Lokaltrafik"
+    },
+    "dates": {
+      "booked": "2025-11-17"
+    },
+    "identifiers": {
+      "providerTransactionId": "1044"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "c131643c3ca74ac2a6d869db07f7fef7",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-1399",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Netflix",
+      "display": "Netflix"
+    },
+    "dates": {
+      "booked": "2025-11-17"
+    },
+    "identifiers": {
+      "providerTransactionId": "1045"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "22477aef34ca49c0a8ba3434dd29b37c",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-12999",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Clas Ohlson",
+      "display": "Clas Ohlson"
+    },
+    "dates": {
+      "booked": "2025-11-16"
+    },
+    "identifiers": {
+      "providerTransactionId": "1047"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "83cf75ea5bf140e6b35502540fa0b74d",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-1733",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Hemköp",
+      "display": "Hemköp"
+    },
+    "dates": {
+      "booked": "2025-11-15"
+    },
+    "identifiers": {
+      "providerTransactionId": "1048"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "2415c068161648c4b520db5c92c3028b",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-249",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Wayne's coffee",
+      "display": "Wayne's Coffee"
+    },
+    "dates": {
+      "booked": "2025-11-13"
+    },
+    "identifiers": {
+      "providerTransactionId": "1050"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "5ff100b3d124452f9a3252954f538cf2",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-868",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "The Bishops Arms",
+      "display": "The Bishops Arms"
+    },
+    "dates": {
+      "booked": "2025-11-13"
+    },
+    "identifiers": {
+      "providerTransactionId": "1049"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "13aea89f7a2448279aeed445af2e3cf8",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2000",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Uttag",
+      "display": "Uttag"
+    },
+    "dates": {
+      "booked": "2025-11-12"
+    },
+    "identifiers": {
+      "providerTransactionId": "1052"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "189cce2be3914c6fac50acb339a95a3c",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-1599",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Spotify",
+      "display": "Spotify"
+    },
+    "dates": {
+      "booked": "2025-11-12"
+    },
+    "identifiers": {
+      "providerTransactionId": "1053"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "2ac682c719f4400d9ecedb95e7cd48a3",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2299",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Telia",
+      "display": "Telia"
+    },
+    "dates": {
+      "booked": "2025-11-12"
+    },
+    "identifiers": {
+      "providerTransactionId": "1051"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "0198fe6b56e64365acc8d8e10e595f8e",
+    "accountId": "fd12d2fcb8ed4c77a3051e81c4f84d38",
+    "amount": {
+      "value": {
+        "unscaledValue": "20000",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Överföring",
+      "display": "Överföring"
+    },
+    "dates": {
+      "booked": "2025-11-10"
+    },
+    "identifiers": {
+      "providerTransactionId": "1002"
+    },
+    "types": {
+      "type": "TRANSFER"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "0b130d3fdce045858e75d8b4212b80c0",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-20000",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Överföring",
+      "display": "Överföring"
+    },
+    "dates": {
+      "booked": "2025-11-10"
+    },
+    "identifiers": {
+      "providerTransactionId": "1054"
+    },
+    "types": {
+      "type": "TRANSFER"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "769b850b42634734831f769a17730eee",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2790",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Storstockholms Lokaltrafik",
+      "display": "Storstockholms Lokaltrafik"
+    },
+    "dates": {
+      "booked": "2025-11-10"
+    },
+    "identifiers": {
+      "providerTransactionId": "1057"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "f11db81683974965935d59cb7c1be51c",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2999",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "ICA",
+      "display": "Ica"
+    },
+    "dates": {
+      "booked": "2025-11-10"
+    },
+    "identifiers": {
+      "providerTransactionId": "1056"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "fe6632b14de64170a88230036be236b2",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-4000",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Shell",
+      "display": "Shell"
+    },
+    "dates": {
+      "booked": "2025-11-10"
+    },
+    "identifiers": {
+      "providerTransactionId": "1055"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "fba17b03d5984d078371f1ebaf9f7bd3",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-5698",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Zalando",
+      "display": "Zalando"
+    },
+    "dates": {
+      "booked": "2025-11-09"
+    },
+    "identifiers": {
+      "providerTransactionId": "1058"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "52ffe8b201474da48c44242a3e4901d5",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-379",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Starbucks",
+      "display": "Starbucks"
+    },
+    "dates": {
+      "booked": "2025-11-07"
+    },
+    "identifiers": {
+      "providerTransactionId": "1059"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "ca101b478cc54cf0a4a31c22cfecf455",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-249",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Wayne's coffee",
+      "display": "Wayne's Coffee"
+    },
+    "dates": {
+      "booked": "2025-11-06"
+    },
+    "identifiers": {
+      "providerTransactionId": "1060"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "7f55495b79f143f9952436ed26e7f279",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-3485",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Trygg-Hansa",
+      "display": "Trygg-Hansa"
+    },
+    "dates": {
+      "booked": "2025-11-05"
+    },
+    "identifiers": {
+      "providerTransactionId": "1061"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "2ed5f5cc437143df93051af4ce13a9fe",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2999",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "ICA",
+      "display": "Ica"
+    },
+    "dates": {
+      "booked": "2025-11-03"
+    },
+    "identifiers": {
+      "providerTransactionId": "1063"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "936129f4d74d4d8bab96203561898f5e",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-65000",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Hyra",
+      "display": "Hyra"
+    },
+    "dates": {
+      "booked": "2025-11-03"
+    },
+    "identifiers": {
+      "providerTransactionId": "1062"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "ce96a6804f5443c28046ddc8c4df3758",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2790",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Storstockholms Lokaltrafik",
+      "display": "Storstockholms Lokaltrafik"
+    },
+    "dates": {
+      "booked": "2025-11-03"
+    },
+    "identifiers": {
+      "providerTransactionId": "1064"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "e68251dbc45446ed8610ea205d4a40f8",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2766",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Coop",
+      "display": "Coop"
+    },
+    "dates": {
+      "booked": "2025-11-03"
+    },
+    "identifiers": {
+      "providerTransactionId": "1065"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "74865ab281e54b92a9d0087814eec1a7",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "188703",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Lön",
+      "display": "Lön"
+    },
+    "dates": {
+      "booked": "2025-11-02"
+    },
+    "identifiers": {
+      "providerTransactionId": "1067"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "c2ffe3578ebb4124b5e8724785ec2c70",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2999",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Specsavers",
+      "display": "Specsavers"
+    },
+    "dates": {
+      "booked": "2025-11-02"
+    },
+    "identifiers": {
+      "providerTransactionId": "1066"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "872f0a90b0ac43be970440b8f7e84beb",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-372",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Ränta",
+      "display": "Ränta"
+    },
+    "dates": {
+      "booked": "2025-11-01"
+    },
+    "identifiers": {
+      "providerTransactionId": "1069"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "b5e3043397ff488ba78d833fd699d490",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-1799",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Vapiano",
+      "display": "Vapiano"
+    },
+    "dates": {
+      "booked": "2025-11-01"
+    },
+    "identifiers": {
+      "providerTransactionId": "1068"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "adaa8f0b71bc4b009414f4a18dc85ad5",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-868",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "The Bishops Arms",
+      "display": "The Bishops Arms"
+    },
+    "dates": {
+      "booked": "2025-10-30"
+    },
+    "identifiers": {
+      "providerTransactionId": "1070"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "c880adc5fce8427ab46a487ebf59962d",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-249",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Wayne's coffee",
+      "display": "Wayne's Coffee"
+    },
+    "dates": {
+      "booked": "2025-10-30"
+    },
+    "identifiers": {
+      "providerTransactionId": "1071"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "1872638748dc47bca1d678994a6b943c",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2399",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Bredbandsbolaget",
+      "display": "Bredbandsbolaget"
+    },
+    "dates": {
+      "booked": "2025-10-28"
+    },
+    "identifiers": {
+      "providerTransactionId": "1072"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "89e8b797bdbd456fa7133d61ce068ae0",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-569",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "McDonalds",
+      "display": "Mcdonalds"
+    },
+    "dates": {
+      "booked": "2025-10-28"
+    },
+    "identifiers": {
+      "providerTransactionId": "1073"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "278852fb963e4a7599f7a230e0973675",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-4000",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Shell",
+      "display": "Shell"
+    },
+    "dates": {
+      "booked": "2025-10-27"
+    },
+    "identifiers": {
+      "providerTransactionId": "1074"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "a867d2faf4ba47eab6129d667bec7625",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2999",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "ICA",
+      "display": "Ica"
+    },
+    "dates": {
+      "booked": "2025-10-27"
+    },
+    "identifiers": {
+      "providerTransactionId": "1075"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "acda0c2da5f047f9853f9c3ff9e35a80",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2790",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Storstockholms Lokaltrafik",
+      "display": "Storstockholms Lokaltrafik"
+    },
+    "dates": {
+      "booked": "2025-10-27"
+    },
+    "identifiers": {
+      "providerTransactionId": "1076"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "8ebd559c863a4d13b67baca718df3098",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-3400",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Fortum",
+      "display": "Fortum"
+    },
+    "dates": {
+      "booked": "2025-10-26"
+    },
+    "identifiers": {
+      "providerTransactionId": "1078"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "c490975d6dcb48c5925b64a35b56658f",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-9771",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Stadium",
+      "display": "Stadium"
+    },
+    "dates": {
+      "booked": "2025-10-26"
+    },
+    "identifiers": {
+      "providerTransactionId": "1077"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "d2da77c390e546109e62e499e84ad094",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-979",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Zara",
+      "display": "Zara"
+    },
+    "dates": {
+      "booked": "2025-10-25"
+    },
+    "identifiers": {
+      "providerTransactionId": "1079"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "71fbab4ef46c49a5b988d3c220f67f50",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-379",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Starbucks",
+      "display": "Starbucks"
+    },
+    "dates": {
+      "booked": "2025-10-24"
+    },
+    "identifiers": {
+      "providerTransactionId": "1080"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "3a27221856fc4ed28b544349da6e738a",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-249",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Wayne's coffee",
+      "display": "Wayne's Coffee"
+    },
+    "dates": {
+      "booked": "2025-10-23"
+    },
+    "identifiers": {
+      "providerTransactionId": "1082"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "cbcc3292d1b44f31a68627780f4dbdc4",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2399",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "H&M",
+      "display": "H&M"
+    },
+    "dates": {
+      "booked": "2025-10-23"
+    },
+    "identifiers": {
+      "providerTransactionId": "1081"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "ef4973fe1a884bd6b61e580ad5b5d78c",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-5366",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Hemköp",
+      "display": "Hemköp"
+    },
+    "dates": {
+      "booked": "2025-10-22"
+    },
+    "identifiers": {
+      "providerTransactionId": "1083"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "260dd87548f44d64bcc7bc0485311cfd",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2999",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "ICA",
+      "display": "Ica"
+    },
+    "dates": {
+      "booked": "2025-10-20"
+    },
+    "identifiers": {
+      "providerTransactionId": "1084"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "6576e3fe62ae40878d6721df68b5c8ba",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-1967",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Lidl",
+      "display": "Lidl"
+    },
+    "dates": {
+      "booked": "2025-10-20"
+    },
+    "identifiers": {
+      "providerTransactionId": "1086"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "a04d60a8df5b4355a91fc3323efdacf5",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-1290",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Arlanda Express",
+      "display": "Arlanda Express"
+    },
+    "dates": {
+      "booked": "2025-10-20"
+    },
+    "identifiers": {
+      "providerTransactionId": "1087"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "ed40b0fbb2cb4d8797a6e9b4f0b33c49",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2790",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Storstockholms Lokaltrafik",
+      "display": "Storstockholms Lokaltrafik"
+    },
+    "dates": {
+      "booked": "2025-10-20"
+    },
+    "identifiers": {
+      "providerTransactionId": "1085"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "abd85a6890954201bd375a80f6e42b45",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2496",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Hirschenkeller",
+      "display": "Hirschenkeller"
+    },
+    "dates": {
+      "booked": "2025-10-19"
+    },
+    "identifiers": {
+      "providerTransactionId": "1088"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "7d913a4816f4472fb2638f6839024380",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-1399",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Netflix",
+      "display": "Netflix"
+    },
+    "dates": {
+      "booked": "2025-10-17"
+    },
+    "identifiers": {
+      "providerTransactionId": "1089"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "b81621da451a495d8b27ef9adc49a9af",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-379",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Apoteket Hjärtat",
+      "display": "Apoteket Hjärtat"
+    },
+    "dates": {
+      "booked": "2025-10-17"
+    },
+    "identifiers": {
+      "providerTransactionId": "1090"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "3d4d74a160d74462abf7f5a7ebef4679",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-868",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "The Bishops Arms",
+      "display": "The Bishops Arms"
+    },
+    "dates": {
+      "booked": "2025-10-16"
+    },
+    "identifiers": {
+      "providerTransactionId": "1092"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "7fe4a99ae1844f51af62f1d6c55534a9",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-249",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Wayne's coffee",
+      "display": "Wayne's Coffee"
+    },
+    "dates": {
+      "booked": "2025-10-16"
+    },
+    "identifiers": {
+      "providerTransactionId": "1093"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "d82f4cb5def64030b8d23f18872583ec",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-12999",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Clas Ohlson",
+      "display": "Clas Ohlson"
+    },
+    "dates": {
+      "booked": "2025-10-16"
+    },
+    "identifiers": {
+      "providerTransactionId": "1091"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "5a148e984cfd478e94d893bb06056b77",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-1733",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Hemköp",
+      "display": "Hemköp"
+    },
+    "dates": {
+      "booked": "2025-10-15"
+    },
+    "identifiers": {
+      "providerTransactionId": "1094"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "0bb97527a9c44e05a25e9fff96a2be24",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2790",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Storstockholms Lokaltrafik",
+      "display": "Storstockholms Lokaltrafik"
+    },
+    "dates": {
+      "booked": "2025-10-13"
+    },
+    "identifiers": {
+      "providerTransactionId": "1097"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "3fae59571d684ce7a4f38cee1b4dd114",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-2999",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "ICA",
+      "display": "Ica"
+    },
+    "dates": {
+      "booked": "2025-10-13"
+    },
+    "identifiers": {
+      "providerTransactionId": "1096"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "8b6c19de402e4fc79c939257465a6576",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-4000",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Shell",
+      "display": "Shell"
+    },
+    "dates": {
+      "booked": "2025-10-13"
+    },
+    "identifiers": {
+      "providerTransactionId": "1095"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  },
+  {
+    "id": "104aee76e46f4c6cbacb4dea1b685024",
+    "accountId": "f5886bb1e5884e7b99f9e1d4fe08f57b",
+    "amount": {
+      "value": {
+        "unscaledValue": "-1599",
+        "scale": "1"
+      },
+      "currencyCode": "SEK"
+    },
+    "descriptions": {
+      "original": "Spotify",
+      "display": "Spotify"
+    },
+    "dates": {
+      "booked": "2025-10-12"
+    },
+    "identifiers": {
+      "providerTransactionId": "1100"
+    },
+    "types": {
+      "type": "DEFAULT"
+    },
+    "status": "BOOKED",
+    "providerMutability": "MUTABILITY_UNDEFINED"
+  }
+]

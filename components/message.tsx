@@ -24,6 +24,28 @@ import { MessageReasoning } from "./message-reasoning";
 import { PreviewAttachment } from "./preview-attachment";
 import { Weather } from "./weather";
 
+import { BankAccountCard } from "./bank-account-card";
+import { TransactionList } from "./transaction-list";
+
+// --- Sub-components moved outside for better scoping ---
+
+const BankAccounts = ({ accounts }: { accounts: any[] }) => (
+  <div className="grid gap-2 w-full">
+    {accounts.map((acc) => (
+      <div key={acc.id} className="flex flex-col p-3 rounded-xl border bg-card shadow-sm">
+        <div className="flex justify-between items-center">
+          <span className="font-semibold text-sm">{acc.name}</span>
+          <span className="text-xs font-mono text-muted-foreground">{acc.id.slice(0, 8)}...</span>
+        </div>
+        <div className="mt-1 flex items-baseline gap-1">
+          <span className="text-xl font-bold">{acc.balance.toLocaleString()}</span>
+          <span className="text-xs font-medium uppercase">{acc.currency_code}</span>
+        </div>
+      </div>
+    ))}
+  </div>
+);
+
 const PurePreviewMessage = ({
   addToolApprovalResponse,
   chatId,
@@ -120,7 +142,28 @@ const PurePreviewMessage = ({
             }
 
             if (type === "text") {
+              const isTable = part.text.includes('|') && part.text.includes('---');
               if (mode === "view") {
+                if (isTable) {
+      return (
+        <div key={key} className="mt-2 mb-4">
+          <details className="group border rounded-xl bg-muted/20 hover:bg-muted/40 transition-all overflow-hidden w-full max-w-sm">
+            <summary className="list-none cursor-pointer p-3 flex items-center justify-between text-xs font-medium select-none">
+              <div className="flex items-center gap-2">
+                <span className="p-1.5 bg-background rounded-md border shadow-sm">📊</span>
+                View Detailed Data Table
+              </div>
+              <span className="transition-transform group-open:rotate-180 opacity-50 text-[10px]">▼</span>
+            </summary>
+            <div className="p-4 pt-0 border-t bg-background/50 overflow-x-auto">
+               <MessageContent data-testid="message-content">
+                 <Response>{sanitizeText(part.text)}</Response>
+               </MessageContent>
+            </div>
+          </details>
+        </div>
+      );
+                }
                 return (
                   <div key={key}>
                     <MessageContent
@@ -163,90 +206,66 @@ const PurePreviewMessage = ({
                 );
               }
             }
+const toolPart = part as any;
+         if (toolPart.type === "tool-getBalances") {
+  const { toolCallId, state, output } = toolPart;
 
+  if (state === "output-available" && output) {
+    return (
+      <div className="w-full" key={toolCallId}>
+        <BankAccountCard accounts={output} />
+      </div>
+    );
+  }
+  return <ToolHeader key={toolCallId} state={state} type="tool-getBalances" />;
+}
+           
+
+         if (toolPart.type === "tool-getTransactions") {
+  const { toolCallId, state, output } = toolPart;
+
+  if (state === "output-available" && output) {
+    return (
+      <div className="w-full max-w-lg" key={toolCallId}>
+        <TransactionList transactions={output} />
+      </div>
+    );
+  }
+  return <ToolHeader key={toolCallId} state={state} type="tool-getTransactions" />;
+}
+            // --- WEATHER TOOL ---
             if (type === "tool-getWeather") {
               const { toolCallId, state } = part;
-              const approvalId = (part as { approval?: { id: string } })
-                .approval?.id;
-              const isDenied =
-                state === "output-denied" ||
-                (state === "approval-responded" &&
-                  (part as { approval?: { approved?: boolean } }).approval
-                    ?.approved === false);
-              const widthClass = "w-[min(100%,450px)]";
+              const approvalId = (part as { approval?: { id: string } }).approval?.id;
+              const isDenied = state === "output-denied" || (state === "approval-responded" && (part as any).approval?.approved === false);
 
               if (state === "output-available") {
                 return (
-                  <div className={widthClass} key={toolCallId}>
+                  <div className="w-[min(100%,450px)]" key={toolCallId}>
                     <Weather weatherAtLocation={part.output} />
                   </div>
                 );
               }
 
-              if (isDenied) {
-                return (
-                  <div className={widthClass} key={toolCallId}>
-                    <Tool className="w-full" defaultOpen={true}>
-                      <ToolHeader
-                        state="output-denied"
-                        type="tool-getWeather"
-                      />
-                      <ToolContent>
-                        <div className="px-4 py-3 text-muted-foreground text-sm">
-                          Weather lookup was denied.
-                        </div>
-                      </ToolContent>
-                    </Tool>
-                  </div>
-                );
-              }
-
-              if (state === "approval-responded") {
-                return (
-                  <div className={widthClass} key={toolCallId}>
-                    <Tool className="w-full" defaultOpen={true}>
-                      <ToolHeader state={state} type="tool-getWeather" />
-                      <ToolContent>
-                        <ToolInput input={part.input} />
-                      </ToolContent>
-                    </Tool>
-                  </div>
-                );
-              }
-
               return (
-                <div className={widthClass} key={toolCallId}>
+                <div className="w-[min(100%,450px)]" key={toolCallId}>
                   <Tool className="w-full" defaultOpen={true}>
                     <ToolHeader state={state} type="tool-getWeather" />
                     <ToolContent>
-                      {(state === "input-available" ||
-                        state === "approval-requested") && (
+                      {(state === "input-available" || state === "approval-requested" || state === "approval-responded") && (
                         <ToolInput input={part.input} />
                       )}
                       {state === "approval-requested" && approvalId && (
                         <div className="flex items-center justify-end gap-2 border-t px-4 py-3">
                           <button
-                            className="rounded-md px-3 py-1.5 text-muted-foreground text-sm transition-colors hover:bg-muted hover:text-foreground"
-                            onClick={() => {
-                              addToolApprovalResponse({
-                                id: approvalId,
-                                approved: false,
-                                reason: "User denied weather lookup",
-                              });
-                            }}
-                            type="button"
+                            className="rounded-md px-3 py-1.5 text-muted-foreground text-sm hover:bg-muted"
+                            onClick={() => addToolApprovalResponse({ id: approvalId, approved: false })}
                           >
                             Deny
                           </button>
                           <button
-                            className="rounded-md bg-primary px-3 py-1.5 text-primary-foreground text-sm transition-colors hover:bg-primary/90"
-                            onClick={() => {
-                              addToolApprovalResponse({
-                                id: approvalId,
-                                approved: true,
-                              });
-                            }}
-                            type="button"
+                            className="rounded-md bg-primary px-3 py-1.5 text-primary-foreground text-sm"
+                            onClick={() => addToolApprovalResponse({ id: approvalId, approved: true })}
                           >
                             Allow
                           </button>
@@ -260,76 +279,47 @@ const PurePreviewMessage = ({
 
             if (type === "tool-createDocument") {
               const { toolCallId } = part;
-
               if (part.output && "error" in part.output) {
                 return (
-                  <div
-                    className="rounded-lg border border-red-200 bg-red-50 p-4 text-red-500 dark:bg-red-950/50"
-                    key={toolCallId}
-                  >
+                  <div className="rounded-lg border border-red-200 bg-red-50 p-4 text-red-500 dark:bg-red-950/50" key={toolCallId}>
                     Error creating document: {String(part.output.error)}
                   </div>
                 );
               }
-
-              return (
-                <DocumentPreview
-                  isReadonly={isReadonly}
-                  key={toolCallId}
-                  result={part.output}
-                />
-              );
+              return <DocumentPreview isReadonly={isReadonly} key={toolCallId} result={part.output} />;
             }
 
             if (type === "tool-updateDocument") {
               const { toolCallId } = part;
-
               if (part.output && "error" in part.output) {
                 return (
-                  <div
-                    className="rounded-lg border border-red-200 bg-red-50 p-4 text-red-500 dark:bg-red-950/50"
-                    key={toolCallId}
-                  >
+                  <div className="rounded-lg border border-red-200 bg-red-50 p-4 text-red-500 dark:bg-red-950/50" key={toolCallId}>
                     Error updating document: {String(part.output.error)}
                   </div>
                 );
               }
-
               return (
                 <div className="relative" key={toolCallId}>
-                  <DocumentPreview
-                    args={{ ...part.output, isUpdate: true }}
-                    isReadonly={isReadonly}
-                    result={part.output}
-                  />
+                  <DocumentPreview args={{ ...part.output, isUpdate: true }} isReadonly={isReadonly} result={part.output} />
                 </div>
               );
             }
 
             if (type === "tool-requestSuggestions") {
               const { toolCallId, state } = part;
-
               return (
                 <Tool defaultOpen={true} key={toolCallId}>
                   <ToolHeader state={state} type="tool-requestSuggestions" />
                   <ToolContent>
-                    {state === "input-available" && (
-                      <ToolInput input={part.input} />
-                    )}
+                    {state === "input-available" && <ToolInput input={part.input} />}
                     {state === "output-available" && (
                       <ToolOutput
                         errorText={undefined}
                         output={
                           "error" in part.output ? (
-                            <div className="rounded border p-2 text-red-500">
-                              Error: {String(part.output.error)}
-                            </div>
+                            <div className="rounded border p-2 text-red-500">Error: {String(part.output.error)}</div>
                           ) : (
-                            <DocumentToolResult
-                              isReadonly={isReadonly}
-                              result={part.output}
-                              type="request-suggestions"
-                            />
+                            <DocumentToolResult isReadonly={isReadonly} result={part.output} type="request-suggestions" />
                           )
                         }
                       />
@@ -376,18 +366,13 @@ export const PreviewMessage = memo(
 
 export const ThinkingMessage = () => {
   return (
-    <div
-      className="group/message fade-in w-full animate-in duration-300"
-      data-role="assistant"
-      data-testid="message-assistant-loading"
-    >
+    <div className="group/message fade-in w-full animate-in duration-300" data-role="assistant">
       <div className="flex items-start justify-start gap-3">
         <div className="-mt-1 flex size-8 shrink-0 items-center justify-center rounded-full bg-background ring-1 ring-border">
           <div className="animate-pulse">
             <SparklesIcon size={14} />
           </div>
         </div>
-
         <div className="flex w-full flex-col gap-2 md:gap-4">
           <div className="flex items-center gap-1 p-0 text-muted-foreground text-sm">
             <span className="animate-pulse">Thinking</span>

@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import { AppSidebar } from "@/components/app-sidebar";
 import { DataStreamProvider } from "@/components/data-stream-provider";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
-import { auth } from "../(auth)/auth";
+import { auth } from "@clerk/nextjs/server"; // Use Clerk's server auth
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -14,6 +14,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         strategy="beforeInteractive"
       />
       <DataStreamProvider>
+        {/* The Suspense here fixes the 'Blocking Route' error for SidebarWrapper */}
         <Suspense fallback={<div className="flex h-dvh" />}>
           <SidebarWrapper>{children}</SidebarWrapper>
         </Suspense>
@@ -23,12 +24,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 }
 
 async function SidebarWrapper({ children }: { children: React.ReactNode }) {
-  const [session, cookieStore] = await Promise.all([auth(), cookies()]);
+  // 1. We await Clerk's auth and the cookies
+  // Note: We don't actually need to pass userId to the sidebar anymore 
+  // because the sidebar uses the useUser() hook internally.
+  const [authData, cookieStore] = await Promise.all([auth(), cookies()]);
   const isCollapsed = cookieStore.get("sidebar_state")?.value !== "true";
 
   return (
     <SidebarProvider defaultOpen={!isCollapsed}>
-      <AppSidebar user={session?.user} />
+      {/* 2. Removed user={session?.user} - the sidebar handles its own auth now */}
+      <AppSidebar /> 
       <SidebarInset>{children}</SidebarInset>
     </SidebarProvider>
   );
