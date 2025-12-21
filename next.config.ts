@@ -1,22 +1,9 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  serverExternalPackages: ['better-sqlite3'],
+  // This tells Next.js to be very standard and avoid the experimental features
+  // that are clashing with your dynamic routes.
 
-const nextConfig: NextConfig = {
-  cacheComponents: true,
-  images: {
-    remotePatterns: [
-      {
-        hostname: 'img.clerk.com',
-      },
-      {
-        hostname: "avatar.vercel.sh",
-      },
-      {
-        protocol: "https",
-        //https://nextjs.org/docs/messages/next-image-unconfigured-host
-        hostname: "*.public.blob.vercel-storage.com",
-      },
-    ],
-  },
 };
 
 export default nextConfig;
