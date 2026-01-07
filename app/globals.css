@@ -172,6 +172,14 @@
   touch-action: pan-y;
 }
 
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 @utility overscroll-behavior-contain {
   overscroll-behavior: contain;
 }

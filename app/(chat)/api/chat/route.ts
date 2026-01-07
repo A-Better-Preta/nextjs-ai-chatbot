@@ -13,7 +13,9 @@ import {
   createResumableStreamContext,
   type ResumableStreamContext,
 } from "resumable-stream";
-import { auth, type UserType } from "@/app/(auth)/auth";
+import { auth } from "@clerk/nextjs/server";
+type UserType = "regular"; // Default for now
+
 import { entitlementsByUserType } from "@/lib/ai/entitlements";
 import { type RequestHints, systemPrompt } from "@/lib/ai/prompts";
 import { getLanguageModel } from "@/lib/ai/providers";
@@ -21,7 +23,10 @@ import { createDocument } from "@/lib/ai/tools/create-document";
 import { getWeather } from "@/lib/ai/tools/get-weather";
 import { requestSuggestions } from "@/lib/ai/tools/request-suggestions";
 import { updateDocument } from "@/lib/ai/tools/update-document";
+import { syncBankingData } from "@/lib/ai/tools/sync-banking-data";
+import { getFinancialOverview } from "@/lib/ai/tools/get-financial-overview";
 import { isProductionEnvironment } from "@/lib/constants";
+
 import {
   createStreamId,
   deleteChatById,
@@ -40,10 +45,15 @@ import { convertToUIMessages, generateUUID } from "@/lib/utils";
 import { generateTitleFromUserMessage } from "../../actions";
 import { type PostRequestBody, postRequestBodySchema } from "./schema";
 
+<<<<<<< HEAD
 // Import your pre-defined tools
 import { getAccountBalances, getRecentTransactions } from "@/lib/ai/tools/bank-accounts";
+=======
+import { getUserDb } from "@/lib/db/local-db";
+>>>>>>> 70691e0 (feat: Add PWA support with financial dashboard and push notifications)
 
 export const maxDuration = 60;
+
 
 let globalStreamContext: ResumableStreamContext | null = null;
 
@@ -75,6 +85,7 @@ export async function POST(request: Request) {
   }
 
   try {
+<<<<<<< HEAD
     const { id, message, messages, selectedChatModel, selectedVisibilityType } = requestBody;
     const session = await auth();
 
@@ -83,11 +94,24 @@ export async function POST(request: Request) {
     }
 
     const userType: UserType = session.user.type;
+=======
+    const { id, message, messages, selectedChatModel, selectedVisibilityType } =
+      requestBody;
+
+    const { userId } = await auth();
+ 
+    if (!userId) {
+      return new ChatSDKError("unauthorized:chat").toResponse();
+    }
+ 
+    const userType: UserType = "regular"; // Clerk users are regular by default
+ 
+>>>>>>> 70691e0 (feat: Add PWA support with financial dashboard and push notifications)
     const messageCount = await getMessageCountByUserId({
-      id: session.user.id,
+      id: userId,
       differenceInHours: 24,
     });
-
+ 
     if (messageCount > entitlementsByUserType[userType].maxMessagesPerDay) {
       return new ChatSDKError("rate_limit:chat").toResponse();
     }
@@ -98,7 +122,7 @@ export async function POST(request: Request) {
     let titlePromise: Promise<string> | null = null;
 
     if (chat) {
-      if (chat.userId !== session.user.id) {
+      if (chat.userId !== userId) {
         return new ChatSDKError("forbidden:chat").toResponse();
       }
       if (!isToolApprovalFlow) {
@@ -107,7 +131,7 @@ export async function POST(request: Request) {
     } else if (message?.role === "user") {
       await saveChat({
         id,
-        userId: session.user.id,
+        userId: userId,
         title: "New chat",
         visibility: selectedVisibilityType,
       });
@@ -150,8 +174,13 @@ export async function POST(request: Request) {
         const isReasoningModel = selectedChatModel.includes("reasoning") || selectedChatModel.includes("thinking");
 
         const result = streamText({
+<<<<<<< HEAD
           model: getLanguageModel('google/gemini-1.5-flash'), // Using your helper
           system: systemPrompt({ selectedChatModel: 'google/gemini-1.5-flash', requestHints }),
+=======
+          model: getLanguageModel('gemini-2.5-flash'),
+          system: systemPrompt({ selectedChatModel: 'gemini-2.5-flash', requestHints }),
+>>>>>>> 70691e0 (feat: Add PWA support with financial dashboard and push notifications)
           messages: await convertToModelMessages(uiMessages),
           stopWhen: stepCountIs(5),
           experimental_activeTools: isReasoningModel
@@ -161,18 +190,34 @@ export async function POST(request: Request) {
                 "createDocument",
                 "updateDocument",
                 "requestSuggestions",
+<<<<<<< HEAD
                 "getBalances",
                 "getTransactions",
+=======
+                "syncBankingData",
+                "getFinancialOverview",
+>>>>>>> 70691e0 (feat: Add PWA support with financial dashboard and push notifications)
               ],
           experimental_transform: isReasoningModel ? undefined : smoothStream({ chunking: "word" }),
           tools: {
             getWeather,
+<<<<<<< HEAD
             createDocument: createDocument({ session, dataStream }),
             updateDocument: updateDocument({ session, dataStream }),
             requestSuggestions: requestSuggestions({ session, dataStream }),
             // Map the imported tools here
             getBalances: getAccountBalances,
             getTransactions: getRecentTransactions,
+=======
+            createDocument: createDocument({ userId, dataStream }),
+            updateDocument: updateDocument({ userId, dataStream }),
+            requestSuggestions: requestSuggestions({
+              userId,
+              dataStream,
+            }),
+            syncBankingData: tool(syncBankingData),
+            getFinancialOverview: tool(getFinancialOverview),
+>>>>>>> 70691e0 (feat: Add PWA support with financial dashboard and push notifications)
           },
           experimental_telemetry: {
             isEnabled: isProductionEnvironment,
@@ -211,4 +256,33 @@ export async function POST(request: Request) {
     if (error instanceof ChatSDKError) return error.toResponse();
     return new ChatSDKError("offline:chat").toResponse();
   }
+<<<<<<< HEAD
 }
+=======
+}
+
+export async function DELETE(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const id = searchParams.get("id");
+
+  if (!id) {
+    return new ChatSDKError("bad_request:api").toResponse();
+  }
+
+  const { userId } = await auth();
+ 
+  if (!userId) {
+    return new ChatSDKError("unauthorized:chat").toResponse();
+  }
+ 
+  const chat = await getChatById({ id });
+ 
+  if (chat?.userId !== userId) {
+    return new ChatSDKError("forbidden:chat").toResponse();
+  }
+
+  const deletedChat = await deleteChatById({ id });
+
+  return Response.json(deletedChat, { status: 200 });
+}
+>>>>>>> 70691e0 (feat: Add PWA support with financial dashboard and push notifications)
