@@ -45,12 +45,7 @@ import { convertToUIMessages, generateUUID } from "@/lib/utils";
 import { generateTitleFromUserMessage } from "../../actions";
 import { type PostRequestBody, postRequestBodySchema } from "./schema";
 
-<<<<<<< HEAD
-// Import your pre-defined tools
-import { getAccountBalances, getRecentTransactions } from "@/lib/ai/tools/bank-accounts";
-=======
 import { getUserDb } from "@/lib/db/local-db";
->>>>>>> 70691e0 (feat: Add PWA support with financial dashboard and push notifications)
 
 export const maxDuration = 60;
 
@@ -85,16 +80,6 @@ export async function POST(request: Request) {
   }
 
   try {
-<<<<<<< HEAD
-    const { id, message, messages, selectedChatModel, selectedVisibilityType } = requestBody;
-    const session = await auth();
-
-    if (!session?.user) {
-      return new ChatSDKError("unauthorized:chat").toResponse();
-    }
-
-    const userType: UserType = session.user.type;
-=======
     const { id, message, messages, selectedChatModel, selectedVisibilityType } =
       requestBody;
 
@@ -105,8 +90,6 @@ export async function POST(request: Request) {
     }
  
     const userType: UserType = "regular"; // Clerk users are regular by default
- 
->>>>>>> 70691e0 (feat: Add PWA support with financial dashboard and push notifications)
     const messageCount = await getMessageCountByUserId({
       id: userId,
       differenceInHours: 24,
@@ -174,13 +157,8 @@ export async function POST(request: Request) {
         const isReasoningModel = selectedChatModel.includes("reasoning") || selectedChatModel.includes("thinking");
 
         const result = streamText({
-<<<<<<< HEAD
-          model: getLanguageModel('google/gemini-1.5-flash'), // Using your helper
-          system: systemPrompt({ selectedChatModel: 'google/gemini-1.5-flash', requestHints }),
-=======
           model: getLanguageModel('gemini-2.5-flash'),
           system: systemPrompt({ selectedChatModel: 'gemini-2.5-flash', requestHints }),
->>>>>>> 70691e0 (feat: Add PWA support with financial dashboard and push notifications)
           messages: await convertToModelMessages(uiMessages),
           stopWhen: stepCountIs(5),
           experimental_activeTools: isReasoningModel
@@ -190,25 +168,12 @@ export async function POST(request: Request) {
                 "createDocument",
                 "updateDocument",
                 "requestSuggestions",
-<<<<<<< HEAD
-                "getBalances",
-                "getTransactions",
-=======
                 "syncBankingData",
                 "getFinancialOverview",
->>>>>>> 70691e0 (feat: Add PWA support with financial dashboard and push notifications)
               ],
           experimental_transform: isReasoningModel ? undefined : smoothStream({ chunking: "word" }),
           tools: {
             getWeather,
-<<<<<<< HEAD
-            createDocument: createDocument({ session, dataStream }),
-            updateDocument: updateDocument({ session, dataStream }),
-            requestSuggestions: requestSuggestions({ session, dataStream }),
-            // Map the imported tools here
-            getBalances: getAccountBalances,
-            getTransactions: getRecentTransactions,
-=======
             createDocument: createDocument({ userId, dataStream }),
             updateDocument: updateDocument({ userId, dataStream }),
             requestSuggestions: requestSuggestions({
@@ -217,7 +182,6 @@ export async function POST(request: Request) {
             }),
             syncBankingData: tool(syncBankingData),
             getFinancialOverview: tool(getFinancialOverview),
->>>>>>> 70691e0 (feat: Add PWA support with financial dashboard and push notifications)
           },
           experimental_telemetry: {
             isEnabled: isProductionEnvironment,
@@ -256,9 +220,6 @@ export async function POST(request: Request) {
     if (error instanceof ChatSDKError) return error.toResponse();
     return new ChatSDKError("offline:chat").toResponse();
   }
-<<<<<<< HEAD
-}
-=======
 }
 
 export async function DELETE(request: Request) {
@@ -285,4 +246,3 @@ export async function DELETE(request: Request) {
 
   return Response.json(deletedChat, { status: 200 });
 }
->>>>>>> 70691e0 (feat: Add PWA support with financial dashboard and push notifications)
