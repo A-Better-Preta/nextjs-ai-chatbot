@@ -8,7 +8,7 @@ import { artifactDefinitions } from "./artifact";
 import { useDataStream } from "./data-stream-provider";
 import { getChatHistoryPaginationKey } from "./sidebar-history";
 
-export function DataStreamHandler({ id }: { id: string }) {
+export function DataStreamHandler({ id }: { id?: string }) {
   const { dataStream, setDataStream } = useDataStream();
   const { mutate } = useSWRConfig();
 

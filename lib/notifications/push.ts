@@ -27,7 +27,7 @@ export async function sendPushNotification(userId: string, title: string, body: 
       },
     };
 
-    return webpush.sendNotification(pushSubscription, payload).catch((err) => {
+    return webpush.sendNotification(pushSubscription, payload).catch((err: any) => {
       if (err.statusCode === 404 || err.statusCode === 410) {
         // Subscription is no longer valid, delete it
         db.prepare('DELETE FROM push_subscriptions WHERE endpoint = ?').run(sub.endpoint);
