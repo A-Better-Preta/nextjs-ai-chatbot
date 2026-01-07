@@ -8,7 +8,7 @@ import { artifactDefinitions } from "./artifact";
 import { useDataStream } from "./data-stream-provider";
 import { getChatHistoryPaginationKey } from "./sidebar-history";
 
-export function DataStreamHandler() {
+export function DataStreamHandler({ id }: { id: string }) {
   const { dataStream, setDataStream } = useDataStream();
   const { mutate } = useSWRConfig();
 
@@ -86,7 +86,7 @@ export function DataStreamHandler() {
         }
       });
     }
-  }, [dataStream, setArtifact, setMetadata, artifact, setDataStream, mutate]);
+  }, [dataStream, setArtifact, setMetadata, artifact, setDataStream, mutate, id]);
 
   return null;
 }
