@@ -5,8 +5,13 @@ node_modules
 .pnp
 .pnp.js
 
-# Explicitly allow the database file to be uploaded to Vercel
-!user_data.db
+# Database files
+user_data/*.db
+user_data/*.db-shm
+user_data/*.db-wal
+*.db
+*.db-shm
+*.db-wal
 
 # testing
 coverage
