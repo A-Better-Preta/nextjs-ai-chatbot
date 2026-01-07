@@ -157,8 +157,8 @@ export async function POST(request: Request) {
         const isReasoningModel = selectedChatModel.includes("reasoning") || selectedChatModel.includes("thinking");
 
         const result = streamText({
-          model: getLanguageModel('gemini-2.5-flash'),
-          system: systemPrompt({ selectedChatModel: 'gemini-2.5-flash', requestHints }),
+          model: getLanguageModel('google/gemini-2.5-flash-lite'),
+          system: systemPrompt({ selectedChatModel: 'google/gemini-2.5-flash-lite', requestHints }),
           messages: await convertToModelMessages(uiMessages),
           stopWhen: stepCountIs(5),
           experimental_activeTools: isReasoningModel
